@@ -352,16 +352,19 @@ public abstract class TimestampConverter<R extends ConnectRecord<R>> implements 
     public static class Value<R extends ConnectRecord<R>> extends TimestampConverter<R> {
         @Override
         protected Schema operatingSchema(R record) {
+            System.out.println("...disini_operatingSchema...");
             return record.valueSchema();
         }
 
         @Override
         protected Object operatingValue(R record) {
+            System.out.println("...disini_operatingValue...");
             return record.value();
         }
 
         @Override
         protected R newRecord(R record, Schema updatedSchema, Object updatedValue) {
+            System.out.println("...disini_newRecord...");
             return record.newRecord(record.topic(), record.kafkaPartition(), record.keySchema(), record.key(), updatedSchema, updatedValue, record.timestamp());
         }
     }

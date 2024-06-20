@@ -2827,8 +2827,10 @@ project(':connect:transforms') {
 
   dependencies {
     api project(':connect:api')
+    api project(':connect:json')
 
     implementation libs.slf4jApi
+    implementation 'com.google.guava:guava:33.2.1-jre'
 
     testImplementation libs.easymock
     testImplementation libs.junitJupiter
