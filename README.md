@@ -18,6 +18,12 @@ for more details). See below for how to use a specific Scala version or all of t
 ### Build a jar and run it ###
     ./gradlew jar
 
+    cp ~/Documents/github/ibnummuhammad/kafka/connect/api/build/libs/connect-api-3.7.0.jar ~/Documents/github/ibnummuhammad/debezium-container-images/kafka/2.6/libs/connect-api-3.7.0.jar
+    cp ~/Documents/github/ibnummuhammad/kafka/connect/json/build/libs/connect-json-3.7.0.jar ~/Documents/github/ibnummuhammad/debezium-container-images/kafka/2.6/libs/connect-json-3.7.0.jar
+    cp ~/Documents/github/ibnummuhammad/kafka/connect/runtime/build/libs/connect-runtime-3.7.0.jar ~/Documents/github/ibnummuhammad/debezium-container-images/kafka/2.6/libs/connect-runtime-3.7.0.jar
+    cp ~/Documents/github/ibnummuhammad/kafka/connect/transforms/build/libs/connect-transforms-3.7.0.jar ~/Documents/github/ibnummuhammad/debezium-container-images/kafka/2.6/libs/connect-transforms-3.7.0.jar
+    cp ~/Documents/github/ibnummuhammad/kafka/clients/build/libs/kafka-clients-3.7.0.jar ~/Documents/github/ibnummuhammad/debezium-container-images/kafka/2.6/libs/kafka-clients-3.7.0.jar
+
 Follow instructions in https://kafka.apache.org/quickstart
 
 ### Build source jar ###
